@@ -164,24 +164,59 @@ body[data-tab="eng"]{color:#3A2E44;background:linear-gradient(160deg,#A8A7D8 0%,
 .e-dash{border-style:dashed}
 
 /* MED */
-body[data-tab="med"]{background:#fff;color:#37352F}
-.n-cover{height:92px;border-radius:0 0 4px 4px;margin:-14px -16px 0;background:linear-gradient(120deg,#EDEAE5,#F7F6F3 40%,#E4E1DB 70%,#F3F1ED)}
-.n-title{font-family:"Lora",Georgia,serif;font-weight:600;font-size:30px;margin:18px 0 12px;color:#37352F}
-.n-quote{border:1px solid #E9E9E7;border-radius:6px;padding:12px 14px;font-size:14.5px;font-family:"Lora",Georgia,serif}
-.n-h{background:#F1F1EF;font-family:"Lora",Georgia,serif;font-style:italic;font-weight:500;font-size:17px;padding:6px 10px;margin:22px 0 6px;display:flex;justify-content:space-between;align-items:center}
-.n-h small{font-family:"Manrope",sans-serif;font-style:normal;font-size:12px;color:#9B9A97;font-weight:600}
-.n-item{display:grid;grid-template-columns:78px 1fr auto;gap:10px;padding:11px 4px;border-bottom:1px solid #E9E9E7}
-.n-time{font-weight:700;font-size:13px;font-variant-numeric:tabular-nums;line-height:1.35}
-.n-subj{font-family:"Lora",Georgia,serif;font-weight:600;font-size:16px;line-height:1.25}
-.n-meta{font-size:13px;color:#787774;margin-top:4px;line-height:1.4}
-.n-tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:6px}
-.tag{font-size:11.5px;font-weight:600;padding:2px 7px;border-radius:4px;background:#F1F1EF;color:#787774}
-.tag.lec{background:#E7F3F8;color:#337EA9}.tag.pr{background:#FBF3DB;color:#A6762A}.tag.sem{background:#EDF3EC;color:#448361}.tag.ex{background:#FDEBEC;color:#C4433E}.tag.dr{background:#F4F0F7;color:#9065B0}
-.n-act{display:flex;flex-direction:column;gap:2px}
-.n-act button{appearance:none;border:0;background:none;color:#9B9A97;font-size:13px;padding:3px 4px}
-.n-add{appearance:none;width:100%;border:1px solid #E9E9E7;background:#fff;border-radius:6px;padding:10px;color:#787774;font-size:14px;margin-top:10px;font-family:"Lora",Georgia,serif}
-.n-empty{color:#9B9A97;font-size:14px;padding:10px 4px;font-family:"Lora",Georgia,serif;font-style:italic}
-.n-more{appearance:none;border:0;background:none;color:#787774;font-size:13px;padding:10px 4px;text-decoration:underline}
+body[data-tab="med"]{color:#1E2140;background:linear-gradient(170deg,#F1F2FD 0%,#E9EBFB 45%,#E3E6FA 100%)}
+.md-blob{position:fixed;width:320px;height:320px;border-radius:50%;filter:blur(60px);opacity:.55;z-index:-1;pointer-events:none}
+.md-b1{background:#C7C9FF;top:-80px;right:-60px}.md-b2{background:#D9CCFF;bottom:80px;left:-120px}
+.md-hi{font-size:14px;color:#8A8FB0;font-weight:600;margin-top:6px}
+.md-title{font-size:32px;font-weight:800;letter-spacing:-.02em;margin:2px 0 4px}
+.md-sub{font-size:14px;color:#6B7094;margin:0 0 16px;line-height:1.4}
+.md-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.md-stat{background:rgba(255,255,255,.72);border:1px solid #fff;border-radius:20px;padding:12px;box-shadow:0 8px 24px rgba(99,102,241,.08);min-width:0}
+.md-ic{width:32px;height:32px;border-radius:50%;display:grid;place-items:center;font-size:15px;margin-bottom:8px}
+.md-stat b{display:block;font-size:20px;font-weight:800;line-height:1.1}
+.md-stat span{display:block;font-size:11.5px;color:#8A8FB0;font-weight:600;margin-top:2px}
+.md-goal{position:relative;overflow:hidden;margin-top:12px;border-radius:24px;padding:16px 18px 18px;color:#fff;background:linear-gradient(120deg,#6E6BF0 0%,#8B7CF6 55%,#A99BFA 100%);box-shadow:0 14px 30px rgba(110,107,240,.3)}
+.md-goal svg{position:absolute;right:-10px;bottom:-4px;width:190px;opacity:.35}
+.md-gl{position:relative;font-size:12.5px;font-weight:600;opacity:.9}
+.md-goal h2{position:relative;margin:6px 0 4px;font-size:21px;font-weight:800;line-height:1.15;max-width:85%}
+.md-goal p{position:relative;margin:0 0 12px;font-size:13px;opacity:.92;line-height:1.4}
+.md-gbar{position:relative;display:flex;align-items:center;gap:10px;font-size:12.5px;font-weight:700}
+.md-gbar div{flex:1;height:8px;border-radius:8px;background:rgba(255,255,255,.3);overflow:hidden}
+.md-gbar i{display:block;height:100%;background:#fff;border-radius:8px}
+.md-wk{display:flex;align-items:center;justify-content:space-between;margin:20px 2px 10px}
+.md-wk b{font-size:17px;font-weight:800}
+.md-arr{appearance:none;width:36px;height:36px;border-radius:50%;border:1px solid #fff;background:rgba(255,255,255,.75);font-size:16px;color:#4B4FD0;display:grid;place-items:center}
+.md-days{display:grid;grid-template-columns:repeat(7,1fr);gap:5px}
+.md-day{appearance:none;border:1px solid #fff;background:rgba(255,255,255,.62);border-radius:16px;padding:8px 0;text-align:center;min-width:0}
+.md-day .w{display:block;font-size:11.5px;color:#8A8FB0;font-weight:700}
+.md-day .n{display:block;font-size:17px;font-weight:800;margin-top:1px}
+.md-day .p{display:block;width:5px;height:5px;border-radius:50%;margin:4px auto 0;background:transparent}
+.md-day.has .p{background:#7C6CF2}
+.md-day.today{box-shadow:inset 0 0 0 2px #A5A8F5}
+.md-day[aria-selected="true"]{background:linear-gradient(140deg,#6E6BF0,#8B7CF6);color:#fff;border-color:transparent;box-shadow:0 8px 18px rgba(110,107,240,.3)}
+.md-day[aria-selected="true"] .w{color:#E6E4FF}
+.md-day[aria-selected="true"] .p{background:#fff}
+.md-dh{display:flex;align-items:center;justify-content:space-between;margin:18px 2px 10px}
+.md-dh h3{margin:0;font-size:18px;font-weight:800}
+.md-plus{appearance:none;flex:none;width:42px;height:42px;border-radius:50%;border:0;background:linear-gradient(140deg,#6E6BF0,#8B7CF6);color:#fff;font-size:24px;box-shadow:0 8px 18px rgba(110,107,240,.35);display:grid;place-items:center;line-height:1}
+.md-item{display:flex;align-items:center;gap:12px;background:rgba(255,255,255,.78);border:1px solid #fff;border-radius:20px;padding:12px 6px 12px 14px;margin-bottom:8px;box-shadow:0 6px 18px rgba(99,102,241,.07)}
+.md-chk{appearance:none;flex:none;width:28px;height:28px;border-radius:50%;border:2px solid #C5C8E8;background:#fff;padding:0;display:grid;place-items:center}
+.md-chk svg{width:14px;height:14px;opacity:0}
+.md-item.done .md-chk{background:#6E6BF0;border-color:#6E6BF0}
+.md-item.done .md-chk svg{opacity:1}
+.md-body{flex:1;min-width:0}
+.md-time{font-size:12.5px;font-weight:700;color:#6E6BF0}
+.md-subj{font-size:15.5px;font-weight:700;line-height:1.25;margin-top:1px;word-break:break-word}
+.md-item.done .md-subj{color:#9A9EBE;text-decoration:line-through}
+.md-meta{font-size:12.5px;color:#8A8FB0;margin-top:3px;line-height:1.4}
+.md-tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:6px}
+.md-tag{font-size:11px;font-weight:700;padding:3px 8px;border-radius:999px;background:#EEF0FF;color:#5A5ED6}
+.md-tag.pr{background:#FFF4E5;color:#B7791F}.md-tag.sem{background:#E8F7EF;color:#2F855A}.md-tag.ex{background:#FDECEC;color:#C53030}.md-tag.dr{background:#F3EEFF;color:#7B5BD6}
+.md-more{appearance:none;flex:none;border:0;background:none;color:#A3A7C7;font-size:20px;width:34px;height:40px;line-height:1;font-weight:800}
+.md-empty{background:rgba(255,255,255,.5);border:1.5px dashed #C9CCEB;border-radius:20px;padding:18px;text-align:center;color:#8A8FB0;font-size:14px}
+.md-note{background:rgba(255,255,255,.78);border:1px solid #fff;border-radius:22px;padding:14px 16px;margin-top:10px;box-shadow:0 6px 18px rgba(99,102,241,.07)}
+.md-note h4{margin:0 0 8px;font-size:14.5px;font-weight:800}
+.md-note textarea{width:100%;border:0;background:#F3F4FD;border-radius:14px;padding:11px 12px;font:inherit;font-size:15px;line-height:1.45;color:#1E2140;min-height:72px;resize:vertical}
 
 /* MODELS */
 body[data-tab="models"]{background:#E7E3E4;color:#010101}
@@ -248,38 +283,40 @@ body[data-tab="models"]{background:#E7E3E4;color:#010101}
 .mo-empty p{margin:0;color:#5E5862}
 
 /* WORK */
-body[data-tab="work"]{color:#fff;background:linear-gradient(180deg,#B3A8C3 0%,#CDB8C2 28%,#DCC1BB 50%,#C9A391 72%,#A98475 100%)}
-.w-moon{width:210px;height:210px;border-radius:50%;margin:10px auto -170px;background:radial-gradient(circle at 38% 32%,#F3E8E1 0%,#DCC8BE 45%,#BFA79C 75%,#A99085 100%);box-shadow:inset -18px -22px 40px rgba(120,90,80,.35),0 0 60px rgba(255,240,230,.35)}
-.w-cap{position:relative;background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.55);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);border-radius:170px 170px 36px 36px;padding:150px 18px 22px;box-shadow:0 20px 60px rgba(90,60,60,.18)}
-.w-res{position:absolute;right:28px;top:128px;font-size:11px;font-weight:600;opacity:.9}
-.w-title{font-weight:200;font-size:64px;letter-spacing:.04em;text-align:center;line-height:1;margin:0;text-shadow:0 0 16px rgba(255,255,255,.95),0 0 3px #fff}
-.w-sub{text-align:center;font-size:13px;font-weight:500;margin:8px 0 18px;opacity:.95}
-.w-weeks{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px}
-.w-wk{appearance:none;border:1.3px solid rgba(255,255,255,.85);background:transparent;color:#fff;border-radius:999px;padding:10px 6px;font-weight:700;font-size:13.5px;line-height:1.2}
-.w-wk small{display:block;font-weight:500;font-size:11.5px;opacity:.85}
-.w-wk[aria-selected="true"]{background:rgba(255,255,255,.88);color:#6E5560}
-.w-prog{display:flex;align-items:center;gap:10px;font-size:13px;font-weight:600;margin:4px 2px 8px}
-.w-bar{flex:1;height:4px;border-radius:4px;background:rgba(255,255,255,.3);overflow:hidden}
-.w-bar i{display:block;height:100%;background:#fff;box-shadow:0 0 8px #fff}
-.w-blk{font-size:11.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;opacity:.85;margin:14px 4px 4px}
-.w-item{display:grid;grid-template-columns:30px 1fr;gap:10px;align-items:start;padding:11px 4px;border-top:1px solid rgba(255,255,255,.3)}
-.w-item:first-of-type{border-top:0}
-.w-c{appearance:none;width:26px;height:26px;border-radius:50%;border:1.4px solid #fff;background:transparent;padding:0;display:grid;place-items:center;margin-top:1px}
-.w-c svg{width:12px;height:12px;opacity:0}
-.w-item.done .w-c{background:#fff}
-.w-item.done .w-c svg{opacity:1}
-.w-t{font-size:15.5px;font-weight:600;line-height:1.3;text-shadow:0 1px 6px rgba(80,50,50,.25)}
-.w-item.done .w-t{opacity:.65;text-decoration:line-through}
-.w-s{display:block;font-size:12.5px;font-weight:500;opacity:.85;margin-top:2px}
-.w-cnt{display:inline-flex;align-items:center;gap:4px;margin-top:8px;border:1.2px solid rgba(255,255,255,.75);border-radius:999px;padding:2px}
-.w-cnt button{appearance:none;border:0;background:transparent;color:#fff;width:30px;height:28px;border-radius:999px;font-size:17px;font-weight:600}
-.w-cnt b{min-width:26px;text-align:center;font-size:14px}
-.w-cnt span{font-size:11.5px;opacity:.85;padding-right:10px}
-.w-x{appearance:none;border:0;background:none;color:#fff;opacity:.7;font-size:12px;text-decoration:underline;padding:4px 0 0}
-.w-add{display:flex;gap:8px;margin-top:14px}
-.w-add input{flex:1;border:1.2px solid rgba(255,255,255,.75);background:rgba(255,255,255,.15);color:#fff;border-radius:999px;padding:11px 14px;font:inherit;font-size:14.5px}
-.w-add input::placeholder{color:rgba(255,255,255,.8)}
-.w-add button{appearance:none;border:1.3px solid #fff;background:transparent;color:#fff;border-radius:999px;padding:0 16px;font-weight:700;font-size:13px;letter-spacing:.04em;text-transform:uppercase}
+body[data-tab="work"]{color:#3E2C35;background:linear-gradient(180deg,#C9C0D6 0%,#DCCBD0 35%,#E6D1C8 65%,#D9B8A8 100%)}
+.wk-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:8px 2px 16px}
+.wk-head small{display:block;font-size:12.5px;font-weight:600;color:#7A6470;letter-spacing:.02em}
+.wk-head h1{margin:4px 0 0;font-size:46px;font-weight:300;letter-spacing:.06em;line-height:1;color:#fff;text-shadow:0 0 14px rgba(255,255,255,.9),0 0 2px #fff}
+.wk-moon{flex:none;width:76px;height:76px;border-radius:50%;background:radial-gradient(circle at 38% 32%,#F6ECE6 0%,#DFCBC1 50%,#C3AA9F 80%,#AD9489 100%);box-shadow:inset -8px -10px 18px rgba(120,90,80,.3),0 0 30px rgba(255,240,230,.6)}
+.wk-glass{background:rgba(255,255,255,.52);border:1px solid rgba(255,255,255,.78);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);border-radius:24px;box-shadow:0 10px 30px rgba(120,80,90,.1)}
+.wk-seg{display:grid;grid-template-columns:1fr 1fr;padding:4px;gap:4px}
+.wk-seg button{appearance:none;border:0;background:transparent;border-radius:20px;padding:10px 6px;font-weight:700;font-size:14px;color:#6E5862;min-width:0}
+.wk-seg small{display:block;font-weight:500;font-size:11.5px;opacity:.8;margin-top:1px}
+.wk-seg button[aria-selected="true"]{background:#fff;color:#3E2C35;box-shadow:0 4px 12px rgba(120,80,90,.12)}
+.wk-prog{display:flex;align-items:center;gap:14px;padding:16px 18px;margin-top:10px}
+.wk-pct{font-size:34px;font-weight:800;line-height:1}
+.wk-pt{flex:1;min-width:0;font-size:13px;color:#7A6470;font-weight:600}
+.wk-bar{height:8px;border-radius:8px;background:rgba(255,255,255,.75);margin-top:8px;overflow:hidden}
+.wk-bar i{display:block;height:100%;border-radius:8px;background:linear-gradient(90deg,#C99AA8,#A8889E)}
+.wk-lbl{font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#7A6470;margin:20px 6px 8px}
+.wk-task{display:flex;gap:12px;align-items:flex-start;padding:14px;margin-bottom:8px}
+.wk-c{appearance:none;flex:none;width:28px;height:28px;border-radius:50%;border:2px solid #C9AFB8;background:#fff;padding:0;display:grid;place-items:center}
+.wk-c svg{width:14px;height:14px;opacity:0}
+.wk-task.done .wk-c{background:#A8889E;border-color:#A8889E}
+.wk-task.done .wk-c svg{opacity:1}
+.wk-tb{flex:1;min-width:0}
+.wk-t{font-size:15.5px;font-weight:700;line-height:1.3;word-break:break-word}
+.wk-task.done .wk-t{color:#A8949E;text-decoration:line-through}
+.wk-s{font-size:12.5px;color:#8A7480;margin-top:2px;line-height:1.35}
+.wk-cnt{display:flex;align-items:center;gap:8px;margin-top:10px}
+.wk-cnt button{appearance:none;width:32px;height:32px;border-radius:50%;border:0;background:#fff;color:#6E5862;font-size:18px;font-weight:700;line-height:1;display:grid;place-items:center;box-shadow:0 2px 8px rgba(120,80,90,.12)}
+.wk-cnt b{min-width:24px;text-align:center;font-size:16px;font-weight:800}
+.wk-cnt span{font-size:12px;color:#8A7480;font-weight:600}
+.wk-x{appearance:none;flex:none;border:0;background:none;color:#B49AA6;font-size:22px;width:28px;height:28px;line-height:1}
+.wk-add{display:flex;align-items:center;gap:8px;padding:6px 6px 6px 16px;margin-top:14px}
+.wk-add input{flex:1;min-width:0;border:0;background:transparent;font:inherit;font-size:15px;color:#3E2C35;padding:10px 0;outline:none}
+.wk-add input::placeholder{color:#9A8490}
+.wk-add button{appearance:none;flex:none;width:44px;height:44px;border-radius:50%;border:0;background:linear-gradient(140deg,#C99AA8,#A8889E);color:#fff;font-size:24px;line-height:1;display:grid;place-items:center;box-shadow:0 6px 14px rgba(150,100,120,.3)}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 </head>
@@ -295,10 +332,10 @@ body[data-tab="work"]{color:#fff;background:linear-gradient(180deg,#B3A8C3 0%,#C
 <nav class="nav" id="nav" aria-label="Разделы">
   <button type="button" data-a="go" data-t="home"><span class="ic">🏠</span>Сегодня</button>
   <button type="button" data-a="go" data-t="care"><span class="ic">🫧</span>Уход</button>
-  <button type="button" data-a="go" data-t="eng"><span class="ic">🇬🇧</span>English</button>
+  <button type="button" data-a="go" data-t="work"><span class="ic">🌙</span>Ворк</button>
   <button type="button" data-a="go" data-t="med"><span class="ic">💊</span>Мед</button>
   <button type="button" data-a="go" data-t="models"><span class="ic">💜</span>Модели</button>
-  <button type="button" data-a="go" data-t="work"><span class="ic">🌙</span>Ворк</button>
+  <button type="button" data-a="go" data-t="eng"><span class="ic">🇬🇧</span>English</button>
 </nav>
 <div class="modal" id="sheet" role="dialog" aria-modal="true"><div class="sheet" id="sheetBody"></div></div>
 
@@ -323,10 +360,12 @@ function monday(d){var x=new Date(d);x.setHours(0,0,0,0);x.setDate(x.getDate()-(
 
 /* ---------- STATE ---------- */
 var LS="balance-app-v1";
-function blank(){return{v:1,updated:0,care:{},eng:{l:{},days:{}},med:[],models:{cur:0,list:[{id:uid(),name:"Модель 1",start:"2026-11-09",notes:"",checks:{},dayNotes:{},verdict:""}]},work:{done:{},cnt:{},custom:[]},todo:[]};}
+function blank(){return{v:1,updated:0,care:{},eng:{l:{},days:{}},med:[],medNotes:{},medNote:"",models:{cur:0,list:[{id:uid(),name:"Модель 1",start:"2026-11-09",notes:"",checks:{},dayNotes:{},verdict:""}]},work:{done:{},cnt:{},custom:[]},todo:[]};}
 var S=null;
 try{S=JSON.parse(localStorage.getItem(LS)||"null");}catch(e){S=null;}
 if(!S||S.v!==1)S=blank();
+function fix(){if(!S.medNotes)S.medNotes={};if(S.medNote==null)S.medNote="";}
+fix();
 function prune(){
   var lim=iso(addDays(today(),-21));
   Object.keys(S.care).forEach(function(k){if(k<lim)delete S.care[k];});
@@ -357,7 +396,7 @@ function cloudLoad(){
       if(err2||!vals)return;
       try{
         var c=JSON.parse(keys.map(function(k){return vals[k]||"";}).join(""));
-        if(c&&c.v===1&&(c.updated||0)>(S.updated||0)){S=c;prune();persist();render();}
+        if(c&&c.v===1&&(c.updated||0)>(S.updated||0)){S=c;fix();prune();persist();render();}
         else if((S.updated||0)>(c.updated||0))cloudSave();
       }catch(e){}
     });
@@ -471,17 +510,17 @@ function rHome(){
   var html='<div class="h-hi">'+hi+'</div><div class="h-date">'+fmtLong(today())+'</div>';
   html+='<div class="h-sum"><b>'+pct+'%</b><div style="flex:1"><span>Сделано '+done+' из '+total+' дел на сегодня</span><div class="h-bar"><i style="width:'+pct+'%"></i></div></div></div>';
   html+='<button type="button" class="hc" data-a="go" data-t="care"><div class="hc-top"><span class="dot" style="background:#F48FB5"></span>Уход<span class="hc-go">открыть</span></div><div class="hc-b">Утро <b>'+cm.d+'/'+cm.t+'</b> · вечер <b>'+ce.d+'/'+ce.t+'</b><br>Вечером: <b>'+act.name+'</b></div></button>';
-  html+='<button type="button" class="hc" data-a="go" data-t="med"><div class="hc-top"><span class="dot" style="background:#9B9A97"></span>Мед<span class="hc-go">открыть</span></div><div class="hc-b">';
+  html+='<button type="button" class="hc" data-a="go" data-t="work"><div class="hc-top"><span class="dot" style="background:#C9A391"></span>Ворк · неделя '+(wk+1)+'<span class="hc-go">открыть</span></div><div class="hc-b">'+(wOpen.length?'Осталось задач: <b>'+wOpen.length+'</b> из '+wit.length+'<br>Следующая: '+esc(wOpen[0].t):'Все задачи недели закрыты ✓')+'</div></button>';
+  html+='<button type="button" class="hc" data-a="go" data-t="med"><div class="hc-top"><span class="dot" style="background:#7C6CF2"></span>Мед<span class="hc-go">открыть</span></div><div class="hc-b">';
   if(meds.length)meds.forEach(function(c){html+='<div class="hc-row"><time>'+esc(c.start)+'–'+esc(c.end)+'</time><span><b>'+esc(c.subj)+'</b>'+(c.place?'<br>'+esc(c.place):'')+'</span></div>';});
   else html+='Пар на сегодня нет. Добавь их во вкладке «Мед».';
   html+='</div></button>';
-  html+='<button type="button" class="hc" data-a="go" data-t="eng"><div class="hc-top"><span class="dot" style="background:#A8A7D8"></span>English<span class="hc-go">🔥 '+st+'</span></div><div class="hc-b">'+(nl?'Урок дня: <b>'+nl.n+'. '+esc(nl.t)+'</b>'+(engToday?'<br>Сегодня уже занималась ✓':''):'Все 50 уроков пройдены 🎉')+'</div></button>';
   if(S.models.list.length){
     html+='<button type="button" class="hc" data-a="go" data-t="models"><div class="hc-top"><span class="dot" style="background:#CDBCE7"></span>Модели<span class="hc-go">открыть</span></div><div class="hc-b">';
     S.models.list.forEach(function(m){var i=mIdx(m);html+='<div class="hc-row"><time>'+esc(m.name)+'</time><span>'+(i<0?'старт через '+(-i)+' дн.':i>13?'план пройден':'день '+(i+1)+': <b>'+PLAN[i].title+'</b> · '+mDay(m,i).d+'/'+mDay(m,i).t)+'</span></div>';});
     html+='</div></button>';
   }
-  html+='<button type="button" class="hc" data-a="go" data-t="work"><div class="hc-top"><span class="dot" style="background:#C9A391"></span>Ворк · неделя '+(wk+1)+'<span class="hc-go">открыть</span></div><div class="hc-b">'+(wOpen.length?'Осталось задач: <b>'+wOpen.length+'</b> из '+wit.length+'<br>Следующая: '+esc(wOpen[0].t):'Все задачи недели закрыты ✓')+'</div></button>';
+  html+='<button type="button" class="hc" data-a="go" data-t="eng"><div class="hc-top"><span class="dot" style="background:#A8A7D8"></span>English<span class="hc-go">🔥 '+st+'</span></div><div class="hc-b">'+(nl?'Урок дня: <b>'+nl.n+'. '+esc(nl.t)+'</b>'+(engToday?'<br>Сегодня уже занималась ✓':''):'Все 50 уроков пройдены 🎉')+'</div></button>';
   html+='<section class="todo"><h3><span class="dot" style="background:#111"></span>Доп дела</h3>';
   if(todos.length)todos.forEach(function(t){html+='<div class="ti'+(t.done?' done':'')+'"><button type="button" class="chk" data-a="todo-chk" data-id="'+t.id+'" aria-pressed="'+(t.done?'true':'false')+'" aria-label="Отметить">'+chk("#fff")+'</button><span>'+esc(t.t)+'</span><button type="button" class="x" data-a="todo-del" data-id="'+t.id+'" aria-label="Удалить">×</button></div>';});
   else html+='<div class="empty">Пусто. Запиши, что не хочешь забыть.</div>';
@@ -536,30 +575,41 @@ function rEng(){
 }
 
 var TYPES={lec:"Лекция",pr:"Практика",sem:"Семинар",ex:"Зачёт / экзамен"};
-function medItem(c){
-  return '<div class="n-item"><div class="n-time">'+esc(c.start)+'<br>'+esc(c.end)+'</div><div><div class="n-subj">'+esc(c.subj)+'</div>'+(c.place?'<div class="n-meta">📍 '+esc(c.place)+'</div>':'')+(c.topic?'<div class="n-meta">📖 '+esc(c.topic)+'</div>':'')+'<div class="n-tags"><span class="tag '+c.type+'">'+(TYPES[c.type]||"Пара")+'</span>'+(c.dress?'<span class="tag dr">🥼 '+esc(c.dress)+'</span>':'')+'</div></div><div class="n-act"><button type="button" data-a="med-edit" data-id="'+c.id+'" aria-label="Изменить">✎</button><button type="button" data-a="med-del" data-id="'+c.id+'" aria-label="Удалить">🗑</button></div></div>';
-}
+var medOff=0,medSel=null,WD=["Пн","Вт","Ср","Чт","Пт","Сб","Вс"];
+function medOn(ds){return S.med.filter(function(c){return c.date===ds;}).sort(function(a,b){return a.start<b.start?-1:1;});}
+function nowHM(){var n=new Date();return String(n.getHours()).padStart(2,"0")+":"+String(n.getMinutes()).padStart(2,"0");}
 function rMed(){
-  var td=TD(),tm=iso(addDays(today(),1));
-  var list=S.med.slice().sort(function(a,b){return a.date===b.date?(a.start<b.start?-1:1):(a.date<b.date?-1:1);});
-  var html='<div class="n-cover"></div><div class="n-title">Учёба</div><div class="n-quote">♡ Учусь не ради оценки, а чтобы понимать.</div>';
-  function sect(title,arr,emptyTxt){html+='<div class="n-h">'+title+'<small>'+(arr.length?arr.length+' '+(arr.length===1?'пара':arr.length<5?'пары':'пар'):'')+'</small></div>';if(arr.length)arr.forEach(function(c){html+=medItem(c);});else if(emptyTxt)html+='<div class="n-empty">'+emptyTxt+'</div>';}
-  sect("Сегодня · "+fmt(today()),list.filter(function(c){return c.date===td;}),"Пар нет — свободный день.");
-  sect("Завтра · "+fmt(addDays(today(),1)),list.filter(function(c){return c.date===tm;}),"Пока ничего не добавлено.");
-  var later=list.filter(function(c){return c.date>tm;}),dates=[];
-  later.forEach(function(c){if(dates.indexOf(c.date)<0)dates.push(c.date);});
-  dates.forEach(function(d){sect(fmtLong(parse(d)),later.filter(function(c){return c.date===d;}));});
-  html+='<button type="button" class="n-add" data-a="med-new">+ Добавить пару</button>';
-  var past=list.filter(function(c){return c.date<td;});
-  if(past.length){html+='<button type="button" class="n-more" data-a="med-past">'+(medPast?'Скрыть прошедшие':'Показать прошедшие ('+past.length+')')+'</button>';
-    if(medPast){var pd=[];past.forEach(function(c){if(pd.indexOf(c.date)<0)pd.push(c.date);});pd.reverse().forEach(function(d){sect(fmtLong(parse(d)),past.filter(function(c){return c.date===d;}));});}}
+  var td=TD(),hm=nowHM(),mon0=monday(today()),mon=addDays(mon0,medOff*7);
+  if(medSel===null)medSel=td;
+  var h=new Date().getHours(),hi=h<5?"Доброй ночи":h<12?"Доброе утро":h<18?"Добрый день":"Добрый вечер";
+  var wStart=iso(mon0),wEnd=iso(addDays(mon0,6));
+  var week=S.med.filter(function(c){return c.date>=wStart&&c.date<=wEnd;});
+  var past=week.filter(function(c){return c.date<td||(c.date===td&&c.end&&c.end<=hm);}).length;
+  var up=S.med.filter(function(c){return c.date>td||(c.date===td&&(!c.end||c.end>hm));}).sort(function(a,b){return a.date===b.date?(a.start<b.start?-1:1):(a.date<b.date?-1:1);});
+  var nx=up[0],todayN=medOn(td).length,notes=Object.keys(S.medNotes).filter(function(k){return S.medNotes[k];}).length+(S.medNote?1:0);
+  var html='<div class="md-blob md-b1"></div><div class="md-blob md-b2"></div><div class="md-hi">'+hi+'</div><div class="md-title">Учёба 📚</div><p class="md-sub">Расписание на неделю и заметки к парам.</p>';
+  html+='<div class="md-stats"><div class="md-stat"><div class="md-ic" style="background:#ECEBFF">📅</div><b>'+todayN+'</b><span>пар сегодня</span></div><div class="md-stat"><div class="md-ic" style="background:#E6F0FF">🕘</div><b>'+(nx?esc(nx.start||"—"):"—")+'</b><span>следующая</span></div><div class="md-stat"><div class="md-ic" style="background:#FFEDEF">📝</div><b>'+notes+'</b><span>заметок</span></div></div>';
+  html+='<section class="md-goal"><svg viewBox="0 0 200 100" aria-hidden="true"><path d="M0 100 L60 40 L85 62 L130 10 L200 80 L200 100 Z" fill="#fff"/></svg><div class="md-gl">🎯 Следующая пара</div>';
+  if(nx)html+='<h2>'+esc(nx.subj)+'</h2><p>'+fmtLong(parse(nx.date))+(nx.start?' · '+esc(nx.start)+(nx.end?'–'+esc(nx.end):''):'')+(nx.place?'<br>'+esc(nx.place):'')+'</p>';
+  else html+='<h2>Пар не запланировано</h2><p>Добавь расписание кнопкой «+».</p>';
+  html+='<div class="md-gbar"><div><i style="width:'+(week.length?past/week.length*100:0)+'%"></i></div><span>неделя '+past+'/'+week.length+'</span></div></section>';
+  html+='<div class="md-wk"><button type="button" class="md-arr" data-a="med-wk" data-d="-1" aria-label="Прошлая неделя">‹</button><b>'+fmt(mon)+' — '+fmt(addDays(mon,6))+'</b><button type="button" class="md-arr" data-a="med-wk" data-d="1" aria-label="Следующая неделя">›</button></div><div class="md-days">';
+  for(var i=0;i<7;i++){var dd=addDays(mon,i),ds=iso(dd);html+='<button type="button" class="md-day'+(medOn(ds).length?' has':'')+(ds===td?' today':'')+'" data-a="med-day" data-ds="'+ds+'" aria-selected="'+(ds===medSel)+'"><span class="w">'+WD[i]+'</span><span class="n">'+dd.getDate()+'</span><span class="p"></span></button>';}
+  html+='</div>';
+  var sel=parse(medSel),list=medOn(medSel),title=fmtLong(sel);
+  html+='<div class="md-dh"><h3>'+title.charAt(0).toUpperCase()+title.slice(1)+'</h3><button type="button" class="md-plus" data-a="med-new" aria-label="Добавить пару">+</button></div>';
+  if(list.length)list.forEach(function(c){
+    html+='<div class="md-item'+(c.done?' done':'')+'"><button type="button" class="md-chk" data-a="med-done" data-id="'+c.id+'" aria-pressed="'+(!!c.done)+'" aria-label="Отметить пару">'+chk("#fff")+'</button><div class="md-body">'+(c.start?'<div class="md-time">'+esc(c.start)+(c.end?' – '+esc(c.end):'')+'</div>':'')+'<div class="md-subj">'+esc(c.subj)+'</div>'+(c.place?'<div class="md-meta">📍 '+esc(c.place)+'</div>':'')+(c.topic?'<div class="md-meta">📖 '+esc(c.topic)+'</div>':'')+'<div class="md-tags"><span class="md-tag '+c.type+'">'+(TYPES[c.type]||"Пара")+'</span>'+(c.dress?'<span class="md-tag dr">🥼 '+esc(c.dress)+'</span>':'')+'</div></div><button type="button" class="md-more" data-a="med-edit" data-id="'+c.id+'" aria-label="Изменить">⋮</button></div>';});
+  else html+='<div class="md-empty">Пар нет. Нажми «+», чтобы добавить.</div>';
+  html+='<section class="md-note"><h4>📝 Заметки на этот день</h4><textarea data-in="med-daynote" placeholder="Что взять, что подготовить, домашка…">'+esc(S.medNotes[medSel])+'</textarea></section>';
+  html+='<section class="md-note"><h4>💜 Общие заметки</h4><textarea data-in="med-note" placeholder="Зачёты, долги, важные даты…">'+esc(S.medNote)+'</textarea></section>';
   document.getElementById("p-med").innerHTML=html;
 }
 function medForm(c){
-  var n=!c;c=c||{date:TD(),start:"",end:"",subj:"",type:"pr",place:"",topic:"",dress:""};
+  var n=!c;c=c||{date:medSel||TD(),start:"",end:"",subj:"",type:"pr",place:"",topic:"",dress:""};
   var opts=Object.keys(TYPES).map(function(k){return '<option value="'+k+'"'+(c.type===k?' selected':'')+'>'+TYPES[k]+'</option>';}).join("");
   var dress=["","Медицинская","Спортивная"].map(function(v){return '<option value="'+v+'"'+(c.dress===v?' selected':'')+'>'+(v||"Не нужна")+'</option>';}).join("");
-  openSheet('<h3>'+(n?'Новая пара':'Изменить пару')+'</h3><label class="f" for="fd">Дата</label><input class="inp" type="date" id="fd" value="'+c.date+'"><div class="two"><div><label class="f" for="fs">Начало</label><input class="inp" type="time" id="fs" value="'+esc(c.start)+'"></div><div><label class="f" for="fe">Конец</label><input class="inp" type="time" id="fe" value="'+esc(c.end)+'"></div></div><label class="f" for="fsub">Предмет</label><input class="inp" type="text" id="fsub" value="'+esc(c.subj)+'" placeholder="Фармакология"><div class="two"><div><label class="f" for="ft">Тип</label><select class="inp" id="ft">'+opts+'</select></div><div><label class="f" for="fdr">Спецодежда</label><select class="inp" id="fdr">'+dress+'</select></div></div><label class="f" for="fp">Где</label><input class="inp" type="text" id="fp" value="'+esc(c.place)+'" placeholder="Корпус, кабинет"><label class="f" for="fto">Тема</label><textarea class="inp" id="fto" placeholder="Тема занятия">'+esc(c.topic)+'</textarea><button type="button" class="btn" data-a="med-save" data-id="'+(c.id||"")+'">Сохранить</button><button type="button" class="btn ghost" data-a="close">Отмена</button>');
+  openSheet('<h3>'+(n?'Новая пара':'Изменить пару')+'</h3><label class="f" for="fd">Дата</label><input class="inp" type="date" id="fd" value="'+c.date+'"><div class="two"><div><label class="f" for="fs">Начало</label><input class="inp" type="time" id="fs" value="'+esc(c.start)+'"></div><div><label class="f" for="fe">Конец</label><input class="inp" type="time" id="fe" value="'+esc(c.end)+'"></div></div><label class="f" for="fsub">Предмет</label><input class="inp" type="text" id="fsub" value="'+esc(c.subj)+'" placeholder="Фармакология"><div class="two"><div><label class="f" for="ft">Тип</label><select class="inp" id="ft">'+opts+'</select></div><div><label class="f" for="fdr">Спецодежда</label><select class="inp" id="fdr">'+dress+'</select></div></div><label class="f" for="fp">Где</label><input class="inp" type="text" id="fp" value="'+esc(c.place)+'" placeholder="Корпус, кабинет"><label class="f" for="fto">Тема</label><textarea class="inp" id="fto" placeholder="Тема занятия">'+esc(c.topic)+'</textarea><button type="button" class="btn" data-a="med-save" data-id="'+(c.id||"")+'">Сохранить</button>'+(n?'':'<button type="button" class="btn red" data-a="med-del" data-id="'+c.id+'">Удалить пару</button>')+'<button type="button" class="btn ghost" data-a="close">Отмена</button>');
 }
 
 function rModels(){
@@ -599,19 +649,19 @@ function modelForm(n){
 
 function rWork(){
   if(wSel===null)wSel=wCur();
-  var items=wItems(wSel),dn=items.filter(function(i){return S.work.done[i.id];}).length;
-  var html='<div class="w-moon" aria-hidden="true"></div><section class="w-cap"><span class="w-res">2 недели</span><h1 class="w-title">WORK</h1><div class="w-sub">Ворк · с 9 по 22 ноября</div><div class="w-weeks" role="tablist">';
-  WEEKS.forEach(function(w,i){var s=parse(w.start);html+='<button type="button" class="w-wk" data-a="w-week" data-i="'+i+'" role="tab" aria-selected="'+(i===wSel)+'">Неделя '+(i+1)+'<small>'+fmt(s)+' — '+fmt(addDays(s,6))+'</small></button>';});
-  html+='</div><div class="w-prog"><span>'+dn+' / '+items.length+'</span><div class="w-bar"><i style="width:'+(items.length?dn/items.length*100:0)+'%"></i></div></div>';
+  var items=wItems(wSel),dn=items.filter(function(i){return S.work.done[i.id];}).length,pct=items.length?Math.round(dn/items.length*100):0;
+  var sent=items.reduce(function(a,i){return a+(S.work.cnt[i.id]||0);},0);
+  var html='<header class="wk-head"><div><small>2 недели · 9–22 ноября</small><h1>WORK</h1></div><div class="wk-moon" aria-hidden="true"></div></header><div class="wk-glass wk-seg" role="tablist">';
+  WEEKS.forEach(function(w,i){var s=parse(w.start);html+='<button type="button" data-a="w-week" data-i="'+i+'" role="tab" aria-selected="'+(i===wSel)+'">Неделя '+(i+1)+'<small>'+fmt(s)+' — '+fmt(addDays(s,6))+'</small></button>';});
+  html+='</div><section class="wk-glass wk-prog"><div class="wk-pct">'+pct+'%</div><div class="wk-pt">Закрыто '+dn+' из '+items.length+(sent?' · отправлено '+sent:'')+'<div class="wk-bar"><i style="width:'+pct+'%"></i></div></div></section>';
   var last="";
   items.forEach(function(it){
-    if(it.blk!==last){html+='<div class="w-blk">'+esc(it.blk)+'</div>';last=it.blk;}
+    if(it.blk!==last){html+='<div class="wk-lbl">'+esc(it.blk)+'</div>';last=it.blk;}
     var on=!!S.work.done[it.id],cnt=S.work.cnt[it.id]||0;
-    html+='<div class="w-item'+(on?' done':'')+'"><button type="button" class="w-c" data-a="w-chk" data-id="'+it.id+'" aria-pressed="'+on+'" aria-label="Готово">'+chk("#8A6B74")+'</button><div><div class="w-t">'+esc(it.t)+(it.s?'<span class="w-s">'+esc(it.s)+'</span>':'')+'</div>';
-    if(it.cnt)html+='<div class="w-cnt"><button type="button" data-a="w-cnt" data-id="'+it.id+'" data-d="-1" aria-label="Минус">−</button><b>'+cnt+'</b><button type="button" data-a="w-cnt" data-id="'+it.id+'" data-d="1" aria-label="Плюс">+</button><span>отправлено</span></div>';
-    if(it.custom)html+='<div><button type="button" class="w-x" data-a="w-del" data-id="'+it.id+'">удалить</button></div>';
-    html+='</div></div>';});
-  html+='<div class="w-add"><input id="wIn" type="text" placeholder="Новая задача на неделю…"><button type="button" data-a="w-add">Добавить</button></div></section>';
+    html+='<div class="wk-glass wk-task'+(on?' done':'')+'"><button type="button" class="wk-c" data-a="w-chk" data-id="'+it.id+'" aria-pressed="'+on+'" aria-label="Готово">'+chk("#fff")+'</button><div class="wk-tb"><div class="wk-t">'+esc(it.t)+'</div>'+(it.s?'<div class="wk-s">'+esc(it.s)+'</div>':'');
+    if(it.cnt)html+='<div class="wk-cnt"><button type="button" data-a="w-cnt" data-id="'+it.id+'" data-d="-1" aria-label="Минус">−</button><b>'+cnt+'</b><button type="button" data-a="w-cnt" data-id="'+it.id+'" data-d="1" aria-label="Плюс">+</button><span>отправлено</span></div>';
+    html+='</div>'+(it.custom?'<button type="button" class="wk-x" data-a="w-del" data-id="'+it.id+'" aria-label="Удалить задачу">×</button>':'')+'</div>';});
+  html+='<div class="wk-glass wk-add"><input id="wIn" type="text" placeholder="Новая задача на неделю…" enterkeyhint="done"><button type="button" data-a="w-add" aria-label="Добавить задачу">+</button></div>';
   document.getElementById("p-work").innerHTML=html;
 }
 
@@ -643,10 +693,13 @@ document.addEventListener("click",function(e){
   case "med-new":medForm(null);return;
   case "med-edit":medForm(S.med.filter(function(c){return c.id===d.id;})[0]);return;
   case "med-save":var subj=val("fsub"),date=val("fd");if(!subj||!date){(document.getElementById(subj?"fd":"fsub")).focus();return;}
-    var rec={id:d.id||uid(),date:date,start:val("fs"),end:val("fe"),subj:subj,type:val("ft"),place:val("fp"),topic:val("fto"),dress:val("fdr")};
-    if(d.id)S.med=S.med.map(function(c){return c.id===d.id?rec:c;});else S.med.push(rec);closeSheet();break;
+    var old=S.med.filter(function(c){return c.id===d.id;})[0];
+    var rec={id:d.id||uid(),date:date,start:val("fs"),end:val("fe"),subj:subj,type:val("ft"),place:val("fp"),topic:val("fto"),dress:val("fdr"),done:old?!!old.done:false};
+    if(d.id)S.med=S.med.map(function(c){return c.id===d.id?rec:c;});else S.med.push(rec);medSel=date;closeSheet();break;
   case "med-del":confirmBox("Удалить пару?","Пара исчезнет из расписания.","Удалить",function(){S.med=S.med.filter(function(c){return c.id!==d.id;});commit();render();});return;
-  case "med-past":medPast=!medPast;render();return;
+  case "med-done":S.med.forEach(function(c){if(c.id===d.id)c.done=!c.done;});haptic();break;
+  case "med-wk":medOff+=+d.d;medSel=medOff===0?TD():iso(addDays(monday(today()),medOff*7));render();return;
+  case "med-day":medSel=d.ds;render();return;
   case "m-pick":S.models.cur=+d.i;mSel=null;break;
   case "m-new":modelForm(true);return;
   case "m-edit":modelForm(false);return;
@@ -674,9 +727,12 @@ document.addEventListener("keydown",function(e){
 });
 var nT;
 document.addEventListener("input",function(e){
-  var k=e.target.dataset&&e.target.dataset.in;if(!k)return;var m=curModel();if(!m)return;
-  if(k==="m-notes")m.notes=e.target.value;
-  if(k==="m-daynote"){m.dayNotes=m.dayNotes||{};m.dayNotes[mSel]=e.target.value;}
+  var k=e.target.dataset&&e.target.dataset.in;if(!k)return;
+  if(k==="med-daynote")S.medNotes[medSel]=e.target.value;
+  else if(k==="med-note")S.medNote=e.target.value;
+  else{var m=curModel();if(!m)return;
+    if(k==="m-notes")m.notes=e.target.value;
+    if(k==="m-daynote"){m.dayNotes=m.dayNotes||{};m.dayNotes[mSel]=e.target.value;}}
   clearTimeout(nT);nT=setTimeout(commit,400);
 });
 go("home");
